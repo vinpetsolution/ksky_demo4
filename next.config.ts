@@ -1,0 +1,47 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  reactCompiler: true,
+  cacheComponents: true,
+  experimental: {
+    optimizePackageImports: ["react-icons", "framer-motion"],
+  },
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'thumbnails.honorlink.org' },
+      { protocol: 'https', hostname: 'static-evo.goldengatex.com' },
+      { protocol: 'https', hostname: 'dream.goldengatex.com' },
+      { protocol: 'https', hostname: 'static-pragmatic.goldengatex.com' },
+      { protocol: 'https', hostname: 'static-creative.goldengatex.com' },
+      { protocol: 'https', hostname: 'static.uniongame.org' },
+      { protocol: 'https', hostname: 'www.pgsoft.com' },
+      { protocol: 'https', hostname: 'public.pg-demo.com' },
+      { protocol: 'https', hostname: 'static.pg-demo.com' },
+      { protocol: 'https', hostname: 'static.pgsoft.com' },
+      { protocol: 'https', hostname: 'app-b.insvr.com' },
+      { protocol: 'https', hostname: 'app-c.insvr.com' },
+      { protocol: 'https', hostname: 'app-d.insvr.com' },
+      { protocol: 'https', hostname: 'app-e.insvr.com' },
+      { protocol: 'https', hostname: 'bx.imgix.net' },
+      { protocol: 'https', hostname: 'bc.imgix.net' },
+      { protocol: 'https', hostname: 'bd.imgix.net' },
+      { protocol: 'https', hostname: 'be.imgix.net' },
+      { protocol: 'https', hostname: 'bf.imgix.net' },
+      { protocol: 'https', hostname: 'bg.imgix.net' },
+      { protocol: 'https', hostname: 'bh.imgix.net' },
+      { protocol: 'https', hostname: 'static-booongo.goldengatex.com' },
+      { protocol: 'https', hostname: 'resource.fdsigaming.com' },
+      { protocol: 'https', hostname: 'dream.thefanz.net' },
+      { protocol: 'https', hostname: 'static.thefanz.net' },
+      { protocol: 'https', hostname: 'static2.pgf-asu2nd.com' },
+    { protocol: 'https', hostname: 'cdn-cms.razed.com' },
+    { protocol: 'https', hostname: 'img.dyn123.com' },
+    { protocol: 'https', hostname: 'media.ttfileserver.com' },
+    { protocol: 'https', hostname: 'ap-south-1.linodeobjects.com' },
+    { protocol: 'https', hostname: 'via.placeholder.com' },
+    { protocol: 'https', hostname: 'res.cloudinary.com' },
+    { protocol: 'https', hostname: 'vedaimg.enjoycx.com' },
+    ],
+  },
+};
+export default nextConfig;
