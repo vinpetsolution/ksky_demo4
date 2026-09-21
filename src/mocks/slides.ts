@@ -9,13 +9,13 @@ export const CASINO_SLIDES: CarouselSlide[] = [
   {
     bgImage: "/images/casino_visual/visual_bg_01.png",
     entityImage: "/images/casino_visual/visual_entity_01.png",
-    labelImage: "/images/visual_label/visual_label_1.png",
+    labelImage: "/images/visual_label/visual_label_ksky_1.png",
     bgColor: "#0c0302",
   },
   {
     bgImage: "/images/casino_visual/visual_bg_02.png",
     entityImage: "/images/casino_visual/visual_entity_02.png",
-    labelImage: "/images/visual_label/visual_label_2.png",
+    labelImage: "/images/visual_label/visual_label_ksky_2.png",
     bgColor: "#0f0b09",
   },
 ];
