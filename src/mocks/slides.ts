@@ -5,18 +5,27 @@ import type {
   PopupBannerItem,
 } from "@/types/game";
 
+const CASINO_BANNER_COPY = {
+  eyebrow: "PREMIUM ONLINE CASINO",
+  title: "한계를 넘는 즐거움\n지금 KSKY와함께",
+  subtitle: "신뢰할수 있는게임, 더특별한경험",
+  ctaLabel: "지금 시작하기",
+} as const;
+
 export const CASINO_SLIDES: CarouselSlide[] = [
   {
-    bgImage: "/images/casino_visual/visual_bg_01.png",
+    bgImage: "/images/banner/banner_01.png",
     entityImage: "/images/casino_visual/visual_entity_01.png",
     labelImage: "/images/visual_label/visual_label_ksky_1.png",
     bgColor: "#0c0302",
+    ...CASINO_BANNER_COPY,
   },
   {
-    bgImage: "/images/casino_visual/visual_bg_02.png",
-    entityImage: "/images/casino_visual/visual_entity_02.png",
-    labelImage: "/images/visual_label/visual_label_ksky_2.png",
-    bgColor: "#0f0b09",
+    bgImage: "/images/banner/banner_02.png",
+    entityImage: "/images/casino_visual/visual_entity_01.png",
+    labelImage: "/images/visual_label/visual_label_ksky_1.png",
+    bgColor: "#0c0302",
+    ...CASINO_BANNER_COPY,
   },
 ];
 
@@ -26,6 +35,7 @@ export const SLOT_SLIDES: CarouselSlide[] = [
     entityImage: "/images/slot_visual/visual_entity_02.png",
     labelImage: "/images/visual_label/visual_label_2.png",
     bgColor: "#420e06",
+    title: "편안한이용되시길바랍니다",
   },
 ];
 
@@ -134,5 +144,6 @@ export const BETHISTORY_SLIDES: CarouselSlide[] = [
     entityImage: "/images/bethistory_visual/visual_entity_sports_global.png",
     labelImage: "/images/visual_label/visual_label_1.png",
     bgColor: "#0a1628",
+    title: "WELCOME TO HEYBET",
   },
 ];

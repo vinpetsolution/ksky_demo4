@@ -3,6 +3,11 @@ export interface CarouselSlide {
   entityImage: string;
   labelImage: string;
   bgColor: string;
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
 }
 
 export interface CasinoCardItem {

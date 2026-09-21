@@ -14,33 +14,27 @@ const NavBar = () => {
   const { qnaUnread } = useMailboxCounts();
 
   return (
-    <nav
-      className={cn(
-        'absolute bottom-0 left-1/2 -translate-x-1/2',
-        'flex justify-center items-center w-full',
-        'z-50'
-      )}
-    >
-      <ul className="flex items-center gap-1.5 xl:gap-2 text-base font-semibold">
+    <nav className="flex w-full items-center justify-center">
+      <ul className="flex items-center justify-center gap-x-0.5 text-[13px] font-semibold xl:gap-x-1 xl:text-sm">
         {NAV_ITEMS.map((item) => {
           const active = isItemActive(item, pathname, searchParams);
           const isInquiries = item.href === '/inquiries';
           return (
             <li
               key={item.label}
-              className={cn('relative group flex items-center h-14')}
+              className="group relative flex items-center"
             >
               {item.children ? (
                 <NavItemWithDropdown item={item} active={active} pathname={pathname} />
               ) : (
                 <AuthLink
                   href={item.href}
-                  className={cn('nav-link px-3 py-2', active && 'text-glow-static')}
+                  className={cn('nav-link whitespace-nowrap px-1.5 py-2 xl:px-2', active && 'text-glow-static')}
                 >
                   <span className="inline-flex items-center gap-1">
                     {item.label}
                     {isInquiries && qnaUnread > 0 && (
-                      <span className="inline-flex min-w-[1.25rem] h-4.5 items-center justify-center rounded-full bg-red-600 px-1.5 text-[10px] font-bold leading-none text-white">
+                      <span className="inline-flex h-4.5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1.5 text-[10px] leading-none font-bold text-white">
                         +{qnaUnread > 99 ? '99' : qnaUnread}
                       </span>
                     )}
