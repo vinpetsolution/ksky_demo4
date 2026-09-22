@@ -43,7 +43,7 @@ export default function HeroCarousel({
 
   return (
     <section className="w-full border-y border-[#454462]">
-      <div className="relative min-w-full overflow-hidden h-50 md:h-auto md:aspect-3/1">
+      <div className="relative min-w-full overflow-hidden h-50 md:h-72 lg:h-auto lg:aspect-4/1">
         {slides.map((slide, i) => {
           const hasCopy = Boolean(
             slide.eyebrow || slide.title || slide.subtitle || slide.ctaLabel,
@@ -191,7 +191,7 @@ export default function HeroCarousel({
         })}
 
         {slides.length > 1 && (
-          <div className="absolute bottom-3 left-[5%] z-20 flex items-center gap-2 sm:bottom-3 sm:left-[8%] lg:bottom-6 lg:left-[10%]">
+          <div className="absolute bottom-3 left-[5%] z-20 flex items-center gap-2 sm:bottom-3 sm:left-[8%] lg:bottom-4 lg:left-[10%] xl:bottom-5">
             {slides.map((_, dotIndex) => (
               <button
                 key={dotIndex}
